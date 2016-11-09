@@ -27,9 +27,7 @@ int main()
 
 }
 
-void execute(cmdLine *pCmdLIne)
+void execute(cmdLine *pCmdLine)
 {
-    
-
-
+   execvp(*pCmdLine->arguments, pCmdLine->arguments);    
 }
